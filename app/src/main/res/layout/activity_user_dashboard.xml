@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.UserDashboard"
+    android:background="@color/white"
+  >
+    <View
+        android:id="@+id/viewHeaderBackground"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/Secondary"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="CropCure"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/logop"
+        app:layout_constraintBottom_toBottomOf="@id/textTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textTitle" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/viewHeaderBackground"
+        app:layout_constraintTop_toBottomOf="@id/viewHeaderBackground">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="14dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textViews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/how_to_use_cropcure"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/allerta"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:id="@+id/layoutSelectCrop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/layoutCaptureImg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViews">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/selectcrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/select"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/allerta"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/crop"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/allerta"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutCaptureImg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/layoutSeeDignosis"
+                app:layout_constraintStart_toEndOf="@id/layoutSelectCrop"
+                app:layout_constraintTop_toBottomOf="@id/textViews">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/access" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/capture"
+                android:textSize="15sp"
+                android:fontFamily="@font/allerta"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/image"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/allerta"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSeeDignosis"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/layoutCaptureImg"
+                app:layout_constraintTop_toBottomOf="@id/textViews">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/diagnosis" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/see1"
+                android:textSize="15sp"
+                android:fontFamily="@font/allerta"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dignosis1"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/allerta"/>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/selectCropTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Select Crop"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardHeader" />
+
+    <HorizontalScrollView
+        android:id="@+id/hscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selectCropTitle"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            tools:ignore="ScrollViewSize"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/hsCorn"
+                android:src="@drawable/corn"
+                style="@style/my_style"
+                android:onClick="corn"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Corn"
+        android:layout_below="@id/hsCorn"
+        android:layout_alignStart="@id/hsCorn"
+        android:layout_alignEnd="@id/hsCorn"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="-23dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:fontFamily="@font/aclonica"/>
+
+    <ImageView
+        android:id="@+id/hsGrapes"
+        android:src="@drawable/grapes"
+        style="@style/my_style"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/hsCorn"
+        android:onClick="grape"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hsGrapes"
+            android:layout_alignStart="@id/hsGrapes"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="-23dp"
+            android:text="Grapes"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:fontFamily="@font/aclonica" />
+
+
+        <ImageView
+            android:id="@+id/hsPotato"
+            android:src="@drawable/potato"
+            style="@style/my_style"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/hsGrapes"
+            android:onClick="potato"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hsPotato"
+            android:layout_alignStart="@id/hsPotato"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="-23dp"
+            android:text="Potato"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:fontFamily="@font/aclonica"/>
+
+        <ImageView
+            android:id="@+id/hsRice"
+            android:src="@drawable/rice"
+            style="@style/my_style"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/hsPotato"
+            android:onClick="rice"
+            />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hsRice"
+            android:layout_alignStart="@id/hsRice"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="-23dp"
+            android:text="Rice"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:fontFamily="@font/aclonica"/>
+
+        <ImageView
+            android:id="@+id/hsStrawberry"
+            android:src="@drawable/strawberry"
+            style="@style/my_style"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/hsRice"
+            android:onClick="strawberry"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hsStrawberry"
+            android:layout_alignStart="@id/hsStrawberry"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="-23dp"
+            android:text="Strawberry"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:fontFamily="@font/aclonica"/>
+
+        <ImageView
+            android:id="@+id/hsTomato"
+            android:src="@drawable/tomato"
+            style="@style/my_style"
+            android:layout_marginStart="10dp"
+            android:onClick="tomato"
+            android:layout_toEndOf="@id/hsStrawberry"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hsTomato"
+            android:layout_alignStart="@id/hsTomato"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="-23dp"
+            android:text="Tomato"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:fontFamily="@font/aclonica"/>
+
+    </RelativeLayout>
+
+
+</HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textFeatures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/hscroll"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Featured Services"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardFeatures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textFeatures"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/layoutFeatures"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/layoutDetect"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:src="@drawable/protectimg" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/allerta"
+                    android:text="Protect"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutDetect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@id/layoutFeatures"
+                app:layout_constraintEnd_toStartOf="@id/layoutCure"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/diagnosis" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/allerta"
+                    android:text="Detect"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutCure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/layoutDetect"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/cure" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/allerta"
+                    android:text="Cure"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

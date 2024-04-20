@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">CropCure</string>
+
+
+    <!--    Titles  -->
+    <string name="lets">Lets get Started</string>
+    <string name="title1">Instant Disease Detection</string>
+    <string name="title2">Helpful Growing Tips</string>
+    <string name="title3">Access to Device camera</string>
+
+    <!--    Description  -->
+    <string name="sub1">With CropCure, diagnose crop diseases swiftly with just a snap, enabling prompt actions to safeguard your yields.</string>
+    <string name="sub2">CropCure offers personalized growing tips and recommendations based on your specific crop types and environmental conditions, empowering you to nurture healthier plants.</string>
+    <string name="sub3">Enable camera access to leverage CropCure powerful image recognition technology, providing visual insights into your crops health.</string>
+
+    <!--    Buttons  -->
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_started">Lets Get Started</string>
+
+
+    <string name="how_to_use_cropcure">How to use CropCure ?</string>
+    <string name="select_crop">Select Crop</string>
+    <string name="select">Select</string>
+    <string name="crop">Crop</string>
+    <string name="capture">Capture</string>
+    <string name="image">Image</string>
+    <string name="dignosis">Dignosis</string>
+    <string name="see">See</string>
+    <string name="dignosis1">Dignosis</string>
+    <string name="see1">See</string>
+    <string name="corn_preventive_measures">1. Crop Rotation: Rotate corn with non-host crops to break disease cycles. Avoid planting corn in the same field continuously, as this can build up disease pressure.\n2. Resistant Varieties: Plant corn varieties that have been bred for resistance to common rust and grey leaf spot. Check with local agricultural extension services or seed suppliers for recommendations on resistant varieties suitable for your region.\n3.Timely Planting: Plant corn at the recommended time for your region to ensure it matures before the onset of disease-friendly weather conditions. Early planting can help reduce the severity of diseases like grey leaf spot.</string>
+    <string name="pm_commonrust">1.Reddish-brown lesions: Small, oval to elongated lesions on the leaves, typically starting as small, light green or yellow spots and developing into reddish-brown pustules. \n2.Pustules: Raised, powdery pustules filled with dark spores (teliospores) on the upper surface of leaves, often clustered together, giving a rusty appearance. \n3.Leaf discoloration: Leaves may turn yellow or brown, depending on the severity of the infection, leading to premature death of affected leaves. \n4.Stunted growth: Severe infections can lead to stunted growth and reduced yield as the disease affects the plant\'s ability to photosynthesize effectively. \n5.Reduced grain quality: Infected ears may have reduced kernel development, affecting the overall quality and yield of the corn crop.</string>
+    <string name="pmcorn_grayspot">1.Circular Lesions: Grayish-brown lesions with dark borders develop on the leaves. \n2.Blotchy Appearance: Leaves exhibit a blotchy appearance due to the presence of numerous lesions. \n3.Yellowing and Browning: Infected areas may turn yellow or brown, leading to eventual necrosis. \n4.Reduced Photosynthesis: Lesions can impair the photosynthetic capability of the plant, leading to stunted growth. \n5.Increased Vulnerability to Other Diseases: Weakened plants are more susceptible to secondary infections and diseases.</string>
+    <string name="pm_corneyespot">1.Oval to spindle-shaped, brown lesions with purple margins on corn leaves. \n2.Lesions typically start small and expand, eventually coalescing with neighboring lesions. \n3.Presence of dark, powdery fungal spores within the lesions, especially in humid conditions. \n4.Reduced photosynthetic activity in affected areas, leading to yellowing and necrosis of leaves. \n5.Potential yield loss due to decreased photosynthesis and weakened plant vigor.</string>
+    <string name="pm_cornnorthern">1.Elliptical lesions on corn leaves, often with gray-green centers and dark borders. \n2.Lesions typically start on lower leaves and progress upwards. \n3.Severely affected leaves may dry up and die prematurely. \n4.Reduced photosynthetic capacity leading to stunted growth and decreased yield. \n5.Under severe infestations, lesions may coalesce, causing large areas of leaf tissue to die.</string>
+    <string name="corn_southern">1.Grayish-green lesions on leaves. \n2.Oval or elongated lesions with a tan center and dark brown border. \n3.Rapid spread of lesions, covering large portions of leaves. \n4.Premature leaf death, leading to reduced photosynthesis. \n5.Yield loss due to decreased plant vigor and grain production.</string>
+    <string name="corn_anthracnose">1.Leaf Lesions: Dark, water-soaked lesions develop on the leaves, often starting at the leaf tips or edges and spreading inward. 2.Blotching: Infected areas may coalesce, forming large, irregularly shaped blotches on the leaves. 3.Leaf Curling and Wilting: Leaves may exhibit curling and wilting as the disease progresses, leading to eventual necrosis. 4.Twig Dieback: In severe cases, twig dieback can occur, with affected twigs showing signs of necrosis and eventually falling off. 5.Reduced Plant Growth: Infected plants may exhibit stunted growth and reduced vigor due to the impact of the disease on photosynthesis and nutrient uptake.</string>
+</resources>

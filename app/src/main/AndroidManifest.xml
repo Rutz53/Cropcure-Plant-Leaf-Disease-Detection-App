@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CropCure"
+        tools:targetApi="31">
+        <activity
+            android:name=".Strawberry.Strawberry5"
+            android:exported="false" />
+        <activity
+            android:name=".Strawberry.Strawberry4"
+            android:exported="false" />
+        <activity
+            android:name=".Strawberry.Strawberry3"
+            android:exported="false" />
+        <activity
+            android:name=".Strawberry.Strawberry2"
+            android:exported="false" />
+        <activity
+            android:name=".Strawberry.Strawberry1"
+            android:exported="false" />
+        <activity
+            android:name=".Rice.Rice4"
+            android:exported="false" />
+        <activity
+            android:name=".Rice.Rice3"
+            android:exported="false" />
+        <activity
+            android:name=".Rice.Rice2"
+            android:exported="false" />
+        <activity
+            android:name=".Rice.Rice1"
+            android:exported="false" />
+        <activity
+            android:name=".Potato.Potato7"
+            android:exported="false" />
+        <activity
+            android:name=".Potato.Potato6"
+            android:exported="false" />
+        <activity
+            android:name=".Potato.Potato5"
+            android:exported="false" />
+        <activity
+            android:name=".Potato.Potato4"
+            android:exported="false" />
+        <activity
+            android:name=".Potato.Potato3"
+            android:exported="false" />
+        <activity
+            android:name=".Potato.Potato1"
+            android:exported="false" />
+        <activity
+            android:name=".Potato.Potato2"
+            android:exported="false" />
+        <activity
+            android:name=".Grape.Grape7"
+            android:exported="false" />
+        <activity
+            android:name=".Grape.Grape6"
+            android:exported="false" />
+        <activity
+            android:name=".Grape.Grape5"
+            android:exported="false" />
+        <activity
+            android:name=".Grape.Grape4"
+            android:exported="false" />
+        <activity
+            android:name=".Grape.Grape3"
+            android:exported="false" />
+        <activity
+            android:name=".Grape.Grape2"
+            android:exported="false" />
+        <activity
+            android:name=".Grape.Grape1"
+            android:exported="false" />
+        <activity
+            android:name=".HelperClass.DescriptionC7"
+            android:exported="false" />
+        <activity
+            android:name=".HelperClass.DescriptionC6"
+            android:exported="false" />
+        <activity
+            android:name=".HelperClass.DescriptionC5"
+            android:exported="false" />
+        <activity
+            android:name=".HelperClass.DescriptionC4"
+            android:exported="false" />
+        <activity
+            android:name=".HelperClass.DescriptionC3"
+            android:exported="false" />
+        <activity
+            android:name=".HelperClass.DescriptionC2"
+            android:exported="false" />
+        <activity
+            android:name=".HelperClass.DescriptionC1"
+            android:exported="false" />
+        <activity
+            android:name=".Database.CornDetection"
+            android:exported="false" />
+        <activity
+            android:name=".Common.CornDisease"
+            android:exported="false" />
+        <activity
+            android:name=".Common.CornDetection"
+            android:exported="false" />
+        <activity
+            android:name=".Database.CornD"
+            android:exported="false" />
+        <activity
+            android:name=".Common.TomatoDisease"
+            android:exported="false" />
+        <activity
+            android:name=".Database.TomatoDetection"
+            android:exported="false" />
+        <activity
+            android:name=".Common.StrawberryDisease"
+            android:exported="false" />
+        <activity
+            android:name=".Database.RiceDetection"
+            android:exported="false" />
+        <activity
+            android:name=".Database.StrawberryDetection"
+            android:exported="false" />
+        <activity
+            android:name=".Common.RiceDisease"
+            android:exported="false" />
+        <activity
+            android:name=".Database.PotatoDetection"
+            android:exported="false" />
+        <activity
+            android:name=".Common.PotatoDisease"
+            android:exported="false" />
+        <activity
+            android:name=".Common.GrapeDisease"
+            android:exported="false" />
+        <activity
+            android:name=".Database.GrapeDetection"
+            android:exported="false" />
+        <activity
+            android:name=".description"
+            android:exported="false" />
+        <activity
+            android:name=".Common.CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Common.OnBoarding"
+            android:exported="false" />
+        <activity
+            android:name=".User.UserDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Common.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
